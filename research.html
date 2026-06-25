@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research projects by Yimin Michael Wang in interpretable AI, data-centric learning, Shapley estimation, and computational biology.">
+    <title>Research | Yimin (Michael) Wang</title>
+    <link rel="icon" href="assets/images/monogram.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Yimin Wang home">
+          <img src="assets/images/monogram.svg" alt="" width="38" height="38">
+          <span>Yimin Wang</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span>Menu</span>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="index.html">Home</a>
+          <a aria-current="page" href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="cv.html">CV</a>
+          <a href="basketball.html">Beyond Research</a>
+          <a class="nav-cta" href="mailto:wangy22@wfu.edu">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container narrow reveal">
+          <p class="eyebrow">Research portfolio</p>
+          <h1>Interpretable, robust, and data-aware machine learning.</h1>
+          <p>
+            My work connects algorithm design with scientific applications: Shapley-value attribution for LLMs,
+            evolutionary optimization for biological discovery, and data-centric strategies for noisy real-world datasets.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container research-stack">
+          <article class="project-card reveal" id="shapley">
+            <div class="project-meta">
+              <span>May 2025 - Present</span>
+              <span>Interpretable and Robust AI Research Group</span>
+              <span>Advisor: Dr. Fan Yang</span>
+            </div>
+            <div class="project-body">
+              <h2>Efficient Shapley Estimation across Tabular, Image, and Graph Data in LLMs</h2>
+              <p>
+                This project develops a unified framework for estimating Shapley values efficiently across several data modalities.
+                The framework uses data-type priors to reduce variance and cost while preserving black-box compatibility.
+              </p>
+              <ul class="project-list">
+                <li>Designed an attribution framework with mathematical proofs of unbiasedness and faithfulness.</li>
+                <li>Used antithetic grouping for tabular data, random cropping for images, and single-hop sampling for graphs.</li>
+                <li>Extended dataset-level valuation to GPT-2 small for data Shapley in LLM training.</li>
+                <li>Performed pixel-level and frame-level Shapley analysis for image and video sensitivity reports.</li>
+                <li>Studied functional subgraphs in LLMs that contribute most to target outputs without gradients or retraining.</li>
+                <li>Extended Shapley attribution to token-level explanations for long-context prompts.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" id="toxicology">
+            <div class="project-meta">
+              <span>May 2023 - August 2025</span>
+              <span>DataMine Research Group</span>
+              <span>Advisor: Dr. Natalia Khuri</span>
+            </div>
+            <div class="project-body">
+              <h2>Data-Centric Artificial Intelligence for Environmental Toxicology</h2>
+              <p>
+                This line of work studies how data selection and data quality interventions affect model performance in environmental
+                toxicology and biomedical datasets, in collaboration with Wake Forest University School of Medicine.
+              </p>
+              <ul class="project-list">
+                <li>Evaluated data-centric approaches, including coreset methods, using paired t-tests and model performance comparisons.</li>
+                <li>Implemented and tested genetic algorithms for dataset coreset selection.</li>
+                <li>Ran parallelized grid searches for genetic algorithm hyperparameters.</li>
+                <li>Visualized selection behavior, minority ratios, and runtime using seaborn and matplotlib.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" id="optimization">
+            <div class="project-meta">
+              <span>2023 - 2025</span>
+              <span>Computational biology + optimization</span>
+              <span>Python · R · XGBoost · GA</span>
+            </div>
+            <div class="project-body">
+              <h2>Multi-Objective Optimization for scRNA-seq and QSAR Modeling</h2>
+              <p>
+                I contributed to methods and tooling for high-dimensional biological data, including clustering, cell-type prediction,
+                and compound discovery with multi-objective evolutionary optimization.
+              </p>
+              <ul class="project-list">
+                <li>Contributed to the <span class="code-word">scrnabench</span> GitHub package for scRNA-seq benchmarking.</li>
+                <li>Implemented a multi-objective genetic algorithm for clustering noisy high-dimensional datasets.</li>
+                <li>Built R scripts to retrieve, annotate, clean, and prepare scRNA-seq data for XGBoost cell-type prediction.</li>
+                <li>Conducted experiments across chemical datasets using coreset selection methods and classification models.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tinted">
+        <div class="container skills-panel reveal">
+          <div>
+            <p class="eyebrow">Research toolkit</p>
+            <h2>Methods and tools I use frequently.</h2>
+          </div>
+          <div class="tag-cloud" aria-label="Research and programming skills">
+            <span>Shapley values</span>
+            <span>Mechanistic interpretability</span>
+            <span>Data-centric AI</span>
+            <span>Evolutionary optimization</span>
+            <span>Genetic algorithms</span>
+            <span>Environmental toxicology</span>
+            <span>Python</span>
+            <span>R</span>
+            <span>C</span>
+            <span>Java</span>
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>Scikit-learn</span>
+            <span>RDKit</span>
+            <span>PyGAD</span>
+            <span>XGBoost</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span data-year></span> Yimin (Michael) Wang</p>
+        <p><a href="mailto:wangy22@wfu.edu">wangy22@wfu.edu</a></p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

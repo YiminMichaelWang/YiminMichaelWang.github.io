@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">YW monogram</title>
+  <defs>
+    <linearGradient id="g" x1="18" y1="10" x2="82" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1f4e79"/>
+      <stop offset="0.55" stop-color="#1b314d"/>
+      <stop offset="1" stop-color="#b46a35"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="28" fill="url(#g)"/>
+  <path d="M22 26h11l12 22 12-22h11L50 57v17H40V57L22 26Z" fill="#fff"/>
+  <path d="M55 42h8l6 18 6-18h8L73 74h-8l-6-18-6 18h-8L55 42Z" fill="#f6d7b5"/>
+</svg>
