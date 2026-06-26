@@ -72,6 +72,11 @@ h1 {
   max-width: 10.4em;
 }
 
+.hero h1 {
+  font-size: clamp(2.5rem, 5.4vw, 4.65rem);
+  max-width: 11.5em;
+}
+
 h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 650;
@@ -425,6 +430,28 @@ p {
   max-width: 800px;
 }
 
+.contact-emails {
+  display: grid;
+  gap: 0.65rem;
+  width: min(100%, 360px);
+}
+
+.contact-emails a {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--blue-dark);
+  font-weight: 780;
+  padding: 0.78rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-emails a:hover {
+  background: var(--blue-dark);
+  color: white;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.8rem 0;
@@ -621,6 +648,10 @@ p {
   padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 7vw, 5.5rem);
 }
 
+.simple-life-hero {
+  padding-bottom: clamp(2rem, 5vw, 3.2rem);
+}
+
 .life-photo img {
   aspect-ratio: 4 / 5;
   object-position: 61% 56%;
@@ -648,6 +679,56 @@ p {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.08;
   margin: 0;
+}
+
+.life-gallery-section {
+  padding-top: 0;
+}
+
+.life-gallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(6, 1fr);
+  gap: clamp(0.75rem, 2vw, 1.2rem);
+}
+
+.gallery-item {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 48px rgba(22, 32, 51, 0.08);
+  grid-column: span 3;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item.gallery-wide {
+  grid-column: span 6;
+}
+
+.gallery-item img {
+  aspect-ratio: 4 / 3;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery-item:not(.gallery-wide) img {
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-item figcaption {
+  background: linear-gradient(180deg, transparent, rgba(10, 17, 29, 0.78));
+  bottom: 0;
+  color: white;
+  font-size: 0.92rem;
+  font-weight: 720;
+  left: 0;
+  margin: 0;
+  padding: 3.8rem 1rem 1rem;
+  position: absolute;
+  right: 0;
 }
 
 .reveal {
@@ -783,6 +864,15 @@ p {
   .life-cards,
   .cv-columns {
     grid-template-columns: 1fr;
+  }
+
+  .life-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item,
+  .gallery-item.gallery-wide {
+    grid-column: span 1;
   }
 }
 

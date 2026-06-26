@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Research projects by Yimin Michael Wang in interpretable AI, data-centric learning, Shapley estimation, and computational biology.">
+    <meta name="description" content="Research projects by Yimin Michael Wang in interpretable AI, LLM attribution, data-centric learning, ML-QSAR optimization, and scRNA-seq analysis.">
     <title>Research | Yimin (Michael) Wang</title>
     <link rel="icon" href="assets/images/monogram.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -23,7 +23,6 @@
         <div class="nav-links" id="site-menu">
           <a href="index.html">Home</a>
           <a aria-current="page" href="research.html">Research</a>
-          <a href="publications.html">Publications</a>
           <a href="cv.html">CV</a>
           <a href="basketball.html">Beyond Research</a>
           <a class="nav-cta" href="mailto:wangy22@wfu.edu">Contact</a>
@@ -37,8 +36,8 @@
           <p class="eyebrow">Research portfolio</p>
           <h1>Interpretable, robust, and data-aware machine learning.</h1>
           <p>
-            My work connects algorithm design with scientific applications: Shapley-value attribution for LLMs,
-            evolutionary optimization for biological discovery, and data-centric strategies for noisy real-world datasets.
+            My work connects interpretable AI with data-centric modeling: Shapley-value attribution for LLMs,
+            evolutionary optimization for compound discovery, and robust learning from noisy scientific datasets.
           </p>
         </div>
       </section>
@@ -89,55 +88,48 @@
             </div>
           </article>
 
-          <article class="project-card reveal" id="optimization">
+          <article class="project-card reveal" id="compound-discovery">
             <div class="project-meta">
-              <span>2023 - 2025</span>
-              <span>Computational biology + optimization</span>
-              <span>Python · R · XGBoost · GA</span>
+              <span>2024 - 2026</span>
+              <span>ML-QSAR + virtual screening</span>
+              <span>Python · RDKit · DEAP · XGBoost</span>
             </div>
             <div class="project-body">
-              <h2>Multi-Objective Optimization for scRNA-seq and QSAR Modeling</h2>
+              <h2>Multi-Objective Evolutionary Optimization for the Discovery of Structurally Diverse and Active Compounds</h2>
               <p>
-                I contributed to methods and tooling for high-dimensional biological data, including clustering, cell-type prediction,
-                and compound discovery with multi-objective evolutionary optimization.
+                This project formulates compound subset selection for ML-QSAR as a multi-objective evolutionary optimization problem,
+                balancing predictive performance, coreset size, class distribution, and structural diversity.
               </p>
               <ul class="project-list">
-                <li>Contributed to the <span class="code-word">scrnabench</span> GitHub package for scRNA-seq benchmarking.</li>
-                <li>Implemented a multi-objective genetic algorithm for clustering noisy high-dimensional datasets.</li>
-                <li>Built R scripts to retrieve, annotate, clean, and prepare scRNA-seq data for XGBoost cell-type prediction.</li>
-                <li>Conducted experiments across chemical datasets using coreset selection methods and classification models.</li>
+                <li>Implemented multi-objective genetic algorithms for coreset selection in imbalanced ML-QSAR datasets.</li>
+                <li>Benchmarked the method on nine SLC transporter inhibition datasets against evolutionary, greedy, sampling, and clustering baselines.</li>
+                <li>Designed objectives for F1-score, coreset size, class-distribution preservation, inter-class distance, and class balance.</li>
+                <li>Evaluated data-centric QSAR pipelines with GAN-augmented balanced coresets and multiple classifiers.</li>
+                <li>Applied the framework to virtual screening over one million environmental, agricultural, and household chemicals to identify putative SLC ligands.</li>
               </ul>
             </div>
           </article>
-        </div>
-      </section>
 
-      <section class="section tinted">
-        <div class="container skills-panel reveal">
-          <div>
-            <p class="eyebrow">Research toolkit</p>
-            <h2>Methods and tools I use frequently.</h2>
-          </div>
-          <div class="tag-cloud" aria-label="Research and programming skills">
-            <span>Shapley values</span>
-            <span>Mechanistic interpretability</span>
-            <span>Data-centric AI</span>
-            <span>Evolutionary optimization</span>
-            <span>Genetic algorithms</span>
-            <span>Environmental toxicology</span>
-            <span>Python</span>
-            <span>R</span>
-            <span>C</span>
-            <span>Java</span>
-            <span>PyTorch</span>
-            <span>TensorFlow</span>
-            <span>Scikit-learn</span>
-            <span>RDKit</span>
-            <span>PyGAD</span>
-            <span>XGBoost</span>
-            <span>Matplotlib</span>
-            <span>Seaborn</span>
-          </div>
+          <article class="project-card reveal" id="scrna">
+            <div class="project-meta">
+              <span>2023 - 2025</span>
+              <span>Single-cell data analysis</span>
+              <span>R · Python · XGBoost · GA</span>
+            </div>
+            <div class="project-body">
+              <h2>Cluster Analysis and Data Integration Tools for scRNA-seq Data</h2>
+              <p>
+                This project focused on benchmarking and improving computational workflows for high-dimensional, noisy
+                single-cell RNA sequencing data.
+              </p>
+              <ul class="project-list">
+                <li>Contributed to the <span class="code-word">scrnabench</span> GitHub package for scRNA-seq benchmarking.</li>
+                <li>Implemented and optimized a multi-objective genetic algorithm for clustering high-dimensional and noisy datasets.</li>
+                <li>Built R scripts to retrieve, annotate, clean, and prepare scRNA-seq data for XGBoost cell-type prediction.</li>
+                <li>Connected data integration, clustering, and supervised prediction workflows for single-cell analysis.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
     </main>
